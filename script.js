@@ -15,12 +15,14 @@
 
 // const theHobbit = new Player("The Hobbit", "J.R.R Tolkien", 295, true);
 
-let myLibrary = [];
-
-function Book() {
-  // the constructor
+function Book(title, author, pages) {
+  this.title = title;
+  this.author = author;
+  this.pages = pages;
 }
 
+function createBookObject() {}
+
 function addBookToLibrary() {
-  // do stuff here
+  let myLibrary = [];
 }

@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-wrapper {
+  border: 2px solid #000;
+  width: 250px;
+  margin-left: 20px;
+  padding: 10px 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  height: 25px;
+}
