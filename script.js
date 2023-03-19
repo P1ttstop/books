@@ -40,13 +40,17 @@ function addBookToLibrary(event) {
   event.preventDefault();
   form.reset();
   console.log(myLibrary);
-  let formWrapper = document.getElementById("form-wrapper");
-  formWrapper.style.display = "none";
+  formClose();
 }
 
 function formOpen() {
   let formWrapper = document.getElementById("form-wrapper");
   formWrapper.style.display = "block";
+}
+
+function formClose() {
+  let formWrapper = document.getElementById("form-wrapper");
+  formWrapper.style.display = "none";
 }
 
 addLibraryButton.addEventListener("click", addBookToLibrary);
