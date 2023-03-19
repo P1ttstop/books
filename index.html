@@ -8,25 +8,39 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>BOOKS!!</h1>
+    <h1>Books</h1>
     <main class="main-wrapper">
-      <form action="">
+      <form id="bookInfoForm">
         <div class="input-wrapper">
           <label for="title">Book Title:</label>
-          <input id="title" type="text" placeholder="Book Title" />
+          <input id="title" type="text" name="title" placeholder="Carrie" />
         </div>
         <div class="input-wrapper">
           <label for="author">Author:</label>
-          <input id="author" type="text" placeholder="Stephen King" />
+          <input
+            id="author"
+            type="text"
+            name="author"
+            placeholder="Stephen King" />
+        </div>
+        <div class="input-wrapper">
+          <label for="year">Year of Publication:</label>
+          <input id="year" type="text" name="year" placeholder="1974" />
         </div>
         <div class="input-wrapper">
           <label for="pages">Page Count:</label>
-          <input id="pages" type="text" placeholder="100" />
-        </div>
-        <div class="button-wrapper">
-          <button id="addToLibrary" class="submit">Add to Library</button>
+          <input id="pages" type="text" name="pages" placeholder="199" />
         </div>
       </form>
+      <div class="button-wrapper">
+        <button
+          id="addToLibrary"
+          type="submit"
+          form="bookInfoForm"
+          value="Submit">
+          Add to Library
+        </button>
+      </div>
     </main>
     <script src="script.js"></script>
   </body>
