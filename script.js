@@ -14,7 +14,7 @@
 // }
 
 // const theHobbit = new Player("The Hobbit", "J.R.R Tolkien", 295, true);
-let myArray = [];
+let myLibrary = [];
 
 function Book(title, author, year, pages) {
   this.title = title;
@@ -33,10 +33,10 @@ function createBookObject() {
 
 function addBookToLibrary(event) {
   let form = document.querySelector("form");
-  myArray.push(createBookObject());
+  myLibrary.push(createBookObject());
   event.preventDefault();
   form.reset();
-  console.log(myArray);
+  console.log(myLibrary);
 }
 
 let button = document.getElementById("addToLibrary");
