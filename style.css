@@ -3,7 +3,14 @@
   box-sizing: border-box;
 }
 
-.main-wrapper {
+.main-btn-wrapper {
+  display: flex;
+  gap: 30px;
+  margin: 20px 0 30px 10px;
+}
+
+#form-wrapper {
+  display: none;
   border: 2px solid #000;
   width: 250px;
   margin-left: 20px;

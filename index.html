@@ -10,36 +10,43 @@
   <body>
     <h1>Books</h1>
     <main class="main-wrapper">
-      <form id="bookInfoForm">
-        <div class="input-wrapper">
-          <label for="title">Book Title:</label>
-          <input id="title" type="text" name="title" placeholder="Carrie" />
+      <div class="main-btn-wrapper">
+        <div class="btn-wrapper">
+          <button id="openForm">Open Form</button>
         </div>
-        <div class="input-wrapper">
-          <label for="author">Author:</label>
-          <input
-            id="author"
-            type="text"
-            name="author"
-            placeholder="Stephen King" />
+      </div>
+      <div id="form-wrapper">
+        <form id="bookInfoForm">
+          <div class="input-wrapper">
+            <label for="title">Book Title:</label>
+            <input id="title" type="text" name="title" placeholder="Carrie" />
+          </div>
+          <div class="input-wrapper">
+            <label for="author">Author:</label>
+            <input
+              id="author"
+              type="text"
+              name="author"
+              placeholder="Stephen King" />
+          </div>
+          <div class="input-wrapper">
+            <label for="year">Year of Publication:</label>
+            <input id="year" type="text" name="year" placeholder="1974" />
+          </div>
+          <div class="input-wrapper">
+            <label for="pages">Page Count:</label>
+            <input id="pages" type="text" name="pages" placeholder="199" />
+          </div>
+        </form>
+        <div class="button-wrapper">
+          <button
+            id="addToLibrary"
+            type="submit"
+            form="bookInfoForm"
+            value="Submit">
+            Add to Library
+          </button>
         </div>
-        <div class="input-wrapper">
-          <label for="year">Year of Publication:</label>
-          <input id="year" type="text" name="year" placeholder="1974" />
-        </div>
-        <div class="input-wrapper">
-          <label for="pages">Page Count:</label>
-          <input id="pages" type="text" name="pages" placeholder="199" />
-        </div>
-      </form>
-      <div class="button-wrapper">
-        <button
-          id="addToLibrary"
-          type="submit"
-          form="bookInfoForm"
-          value="Submit">
-          Add to Library
-        </button>
       </div>
     </main>
     <script src="script.js"></script>

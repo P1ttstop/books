@@ -15,6 +15,9 @@
 
 // const theHobbit = new Player("The Hobbit", "J.R.R Tolkien", 295, true);
 let myLibrary = [];
+let addLibraryButton = document.getElementById("addToLibrary");
+let openForm = document.getElementById("openForm");
+let closeForm = document.getElementById("closeForm");
 
 function Book(title, author, year, pages) {
   this.title = title;
@@ -37,7 +40,15 @@ function addBookToLibrary(event) {
   event.preventDefault();
   form.reset();
   console.log(myLibrary);
+  let formWrapper = document.getElementById("form-wrapper");
+  formWrapper.style.display = "none";
 }
 
-let button = document.getElementById("addToLibrary");
-button.addEventListener("click", addBookToLibrary);
+function formOpen() {
+  let formWrapper = document.getElementById("form-wrapper");
+  formWrapper.style.display = "block";
+}
+
+addLibraryButton.addEventListener("click", addBookToLibrary);
+
+openForm.addEventListener("click", formOpen);
